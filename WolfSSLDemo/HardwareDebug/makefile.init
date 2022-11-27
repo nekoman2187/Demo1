@@ -1,0 +1,11 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+arg1 = $(1)
+export PATH=C:\ProgramData\GCC for Renesas RX 8.3.0.202202-GNURX-ELF\rx-elf\rx-elf\bin\;C:\ProgramData\GCC for Renesas RX 8.3.0.202202-GNURX-ELF\rx-elf\rx-elf\libexec\gcc\rx-elf\8.3.0.202202-GNURX\;C:\Renesas\e2_studio\eclipse\plugins\com.renesas.ide.exttools.busybox.win32.x86_64_1.3.5.v20220125-0945\bin\;C:\Renesas\e2_studio\eclipse\plugins\com.renesas.ide.exttools.gnumake.win32.x86_64_4.3.0.v20220121-1024\mk\;C:/Renesas/e2_studio/eclipse//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_11.0.12.v20211011-1323/jre/bin/server;C:/Renesas/e2_studio/eclipse//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_11.0.12.v20211011-1323/jre/bin;C:\ProgramData\GCC for Renesas RX 8.3.0.202202-GNURX-ELF\rx-elf\rx-elf\bin;C:\ProgramData\GCC for Renesas RX 8.3.0.202104-GNURX-ELF\rx-elf\rx-elf\bin;C:\ProgramData\GCC for Renesas RX 8.3.0.202102-GNURX-ELF\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;C:\Strawberry\c\bin;C:\Strawberry\perl\site\bin;C:\Strawberry\perl\bin;C:\ProgramData\GCC for Renesas RX 8.3.0.202104-GNURX-ELF\rx-elf\rx-elf\bin;C:\ProgramData\GCC for Renesas RX 8.3.0.202102-GNURX-ELF\bin;C:\Users\nekom\AppData\Local\Microsoft\WindowsApps;C:\Users\nekom\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\nekom\.dotnet\tools;C:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin;;C:\Renesas\e2_studio\eclipse
+export TCINSTALL=C:\ProgramData\GCC for Renesas RX 8.3.0.202202-GNURX-ELF\rx-elf\rx-elf$(call arg1,\)
+export CWD=$(CURDIR)
+export TC_VERSION=8.3.0.202202
+export PWD=$(CURDIR)
+export GCC_VERSION=8.3.0.202202-GNURX

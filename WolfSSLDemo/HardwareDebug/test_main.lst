@@ -1,0 +1,94 @@
+   1                             		.file	"test_main.c"
+   2                             		.section P,"ax"
+   3                             	.Ltext0:
+   4                             		.section C,"a",@progbits
+   5                             		.p2align 2
+   6                             	.LC0:
+   7 0000 53 74 61 72 74 20 77 6F 		.string	"Start wolfCrypt Test"
+   7      6C 66 43 72 79 70 74 20 
+   7      54 65 73 74 00 
+   8                             	.LC1:
+   9 0015 45 6E 64 20 77 6F 6C 66 		.string	"End wolfCrypt Test"
+   9      43 72 79 70 74 20 54 65 
+   9      73 74 00 
+  10                             		.section	.text.main1,"ax",@progbits
+  11                             		.global	_main1
+  13                             	_main1:
+  14                             	.LFB3:
+  15                             		.file 1 "../src/wolfDemo/test_main.c"
+   1:../src/wolfDemo/test_main.c **** /* test_main.c
+   2:../src/wolfDemo/test_main.c ****  *
+   3:../src/wolfDemo/test_main.c ****  * Copyright (C) 2006-2020 wolfSSL Inc.
+   4:../src/wolfDemo/test_main.c ****  *
+   5:../src/wolfDemo/test_main.c ****  * This file is part of wolfSSL.
+   6:../src/wolfDemo/test_main.c ****  *
+   7:../src/wolfDemo/test_main.c ****  * wolfSSL is free software; you can redistribute it and/or modify
+   8:../src/wolfDemo/test_main.c ****  * it under the terms of the GNU General Public License as published by
+   9:../src/wolfDemo/test_main.c ****  * the Free Software Foundation; either version 2 of the License, or
+  10:../src/wolfDemo/test_main.c ****  * (at your option) any later version.
+  11:../src/wolfDemo/test_main.c ****  *
+  12:../src/wolfDemo/test_main.c ****  * wolfSSL is distributed in the hope that it will be useful,
+  13:../src/wolfDemo/test_main.c ****  * but WITHOUT ANY WARRANTY; without even the implied warranty of
+  14:../src/wolfDemo/test_main.c ****  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  15:../src/wolfDemo/test_main.c ****  * GNU General Public License for more details.
+  16:../src/wolfDemo/test_main.c ****  *
+  17:../src/wolfDemo/test_main.c ****  * You should have received a copy of the GNU General Public License
+  18:../src/wolfDemo/test_main.c ****  * along with this program; if not, write to the Free Software
+  19:../src/wolfDemo/test_main.c ****  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1335, USA
+  20:../src/wolfDemo/test_main.c ****  */
+  21:../src/wolfDemo/test_main.c **** 
+  22:../src/wolfDemo/test_main.c **** 
+  23:../src/wolfDemo/test_main.c **** #include "stdio.h"
+  24:../src/wolfDemo/test_main.c **** 
+  25:../src/wolfDemo/test_main.c **** void main1(void);
+  26:../src/wolfDemo/test_main.c **** #ifdef __cplusplus
+  27:../src/wolfDemo/test_main.c **** extern "C" {
+  28:../src/wolfDemo/test_main.c **** void abort(void);
+  29:../src/wolfDemo/test_main.c **** }
+  30:../src/wolfDemo/test_main.c **** #endif
+  31:../src/wolfDemo/test_main.c **** 
+  32:../src/wolfDemo/test_main.c **** typedef struct func_args {
+  33:../src/wolfDemo/test_main.c ****     int    argc;
+  34:../src/wolfDemo/test_main.c ****     char** argv;
+  35:../src/wolfDemo/test_main.c ****     int    return_code;
+  36:../src/wolfDemo/test_main.c **** } func_args;
+  37:../src/wolfDemo/test_main.c **** 
+  38:../src/wolfDemo/test_main.c **** void wolfcrypt_test(func_args args);
+  39:../src/wolfDemo/test_main.c **** void main1(void);
+  40:../src/wolfDemo/test_main.c **** 
+  41:../src/wolfDemo/test_main.c **** void main1(void)
+  42:../src/wolfDemo/test_main.c **** {
+  16                             		.loc 1 42 1
+  17 0000 7E AA                   		push.l	r10
+  18                             	.LCFI0:
+  19 0002 71 0A F4                		add	#-12, r0, r10
+  20                             	.LCFI1:
+  21 0005 EF A0                   		mov.L	r10, r0
+  43:../src/wolfDemo/test_main.c ****     func_args args = { 1 };
+  22                             		.loc 1 43 15
+  23 0007 EF A1                   		mov.L	r10, r1
+  24 0009 66 C3                   		mov.L	#12, r3
+  25 000b 66 02                   		mov	#0, r2
+  26 000d 7F 88                   		sstr.b
+  27 000f F8 A6 01                		mov.L	#1, [r10]
+  44:../src/wolfDemo/test_main.c ****   
+  45:../src/wolfDemo/test_main.c ****     printf("Start wolfCrypt Test\n");
+  28                             		.loc 1 45 5
+  29 0012 FB 12 00 00 00 00       		mov.L	#.LC0, r1
+  30 0018 05 00 00 00             		bsr	_puts
+  46:../src/wolfDemo/test_main.c ****   //  wolfcrypt_test(args);
+  47:../src/wolfDemo/test_main.c ****     printf("End wolfCrypt Test\n");
+  31                             		.loc 1 47 5
+  32 001c FB 12 15 00 00 00       		mov.L	#.LC1, r1
+  33 0022 05 00 00 00             		bsr	_puts
+  48:../src/wolfDemo/test_main.c **** 
+  49:../src/wolfDemo/test_main.c **** }
+  34                             		.loc 1 49 1
+  35 0026 03                      		nop
+  36 0027 3F AA 04                		rtsd	#16, r10-r10
+  37                             	.LFE3:
+  76                             	.Letext0:
+  77                             		.file 2 "c:\\programdata\\gcc for renesas rx 8.3.0.202104-gnurx-elf\\rx-elf\\rx-elf\\rx-elf\\inclu
+  78                             		.file 3 "c:\\programdata\\gcc for renesas rx 8.3.0.202104-gnurx-elf\\rx-elf\\rx-elf\\rx-elf\\inclu
+  79                             		.file 4 "c:\\programdata\\gcc for renesas rx 8.3.0.202104-gnurx-elf\\rx-elf\\rx-elf\\lib\\gcc\\rx-
+  80                             		.file 5 "c:\\programdata\\gcc for renesas rx 8.3.0.202104-gnurx-elf\\rx-elf\\rx-elf\\rx-elf\\inclu
